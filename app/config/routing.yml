@@ -1,0 +1,7 @@
+ats_test:
+    resource: "@ATSTestBundle/Resources/config/routing.yml"
+    prefix:   /ats
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

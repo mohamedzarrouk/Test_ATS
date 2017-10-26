@@ -1,0 +1,23 @@
+<h1>   Liste des produtis </h1>
+
+<table border="1">
+
+    <tr>
+        <th> prodouct Name</th>
+        <th> Base Price</th>
+        <th> Image </th>
+        <th> reviews </th>
+
+    </tr>
+    {% for k,product in products %}
+        <tr>
+            <td> {{ product.productName }}</td>
+            <td>{{ product.basePrice}}</td>
+            <td><img src="{{ product.imageUrl}}" alt="test"></td>
+               <td>
+                   <a href="{{ path('reviews',{'reviews':k}) }}">reviews</a>
+               </td>
+
+        </tr>
+    {% endfor %}
+</table>

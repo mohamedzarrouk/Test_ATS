@@ -1,0 +1,20 @@
+<h1> Liste des reviews par produit : {{ product.productName }}</h1>
+
+<table border="1">
+
+    <tr>
+        <th> Rating</th>
+        <th> Content</th>
+
+
+    </tr>
+    {% for rev in product.reviews %}
+        <tr>
+            <td>{{ rev.rating }}</td>
+            <td>{{ rev.content}}</td>
+
+        </tr>
+    {% endfor %}
+</table>
+
+<a href="{{ path('liste_produit') }}"> Retour a la liste des produits</a>

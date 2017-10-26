@@ -1,0 +1,11 @@
+ats_test_homepage:
+    path:     /
+    defaults: { _controller: ATSTestBundle:Default:index }
+
+liste_produit:
+    path:     /produits
+    defaults: { _controller: ATSTestBundle:Default:afficher }
+
+reviews:
+    path:     /reviews
+    defaults: { _controller: ATSTestBundle:Default:reviews }

@@ -1,0 +1,4 @@
+services:
+#    ats_test.example:
+#        class: ATS\TestBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
